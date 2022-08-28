@@ -192,7 +192,7 @@ select distinct emp_no,
 (
 select avg(salary)
 from salaries as A
-where A.emp_no = B.emp_no) as avg_salary
+where A.emp_no = B.emp_no as avg_salary
 from salaries as B;
 
 ```
